@@ -44,7 +44,7 @@ public class MainActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                String info=(boolean)(ApplistItem.get(position)).get("isSys")?"是非系统应用":"是系统应用";
-               Toast.makeText(MainActivity.this, ApplistItem.get(position).get("name")+info, 100).show();
+               Toast.makeText(MainActivity.this, ApplistItem.get(position).get("name")+info, Toast.LENGTH_LONG).show();
             }
             
         });
